@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		F8B1E1E72B374BD100996B69 /* LoginWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B1E1E62B374BD100996B69 /* LoginWebView.swift */; };
 		F8B2E9F72B433A67000DB9DA /* UserPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B2E9F62B433A67000DB9DA /* UserPageView.swift */; };
+		F8B2E9F92B45DD0B000DB9DA /* noise-light.png in Resources */ = {isa = PBXBuildFile; fileRef = F8B2E9F82B45DD0B000DB9DA /* noise-light.png */; };
+		F8B2E9FB2B45DD3E000DB9DA /* noise-light.png in Resources */ = {isa = PBXBuildFile; fileRef = F8B2E9FA2B45DD3E000DB9DA /* noise-light.png */; };
 		F8C75F622B34C230009FD101 /* ImageTokulyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C75F612B34C230009FD101 /* ImageTokulyApp.swift */; };
 		F8C75F642B34C230009FD101 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C75F632B34C230009FD101 /* ContentView.swift */; };
 		F8C75F662B34C232009FD101 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8C75F652B34C232009FD101 /* Assets.xcassets */; };
@@ -39,6 +41,8 @@
 /* Begin PBXFileReference section */
 		F8B1E1E62B374BD100996B69 /* LoginWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWebView.swift; sourceTree = "<group>"; };
 		F8B2E9F62B433A67000DB9DA /* UserPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPageView.swift; sourceTree = "<group>"; };
+		F8B2E9F82B45DD0B000DB9DA /* noise-light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "noise-light.png"; path = "../../../../../../Downloads/noise-light.png"; sourceTree = "<group>"; };
+		F8B2E9FA2B45DD3E000DB9DA /* noise-light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "noise-light.png"; path = "../../../../../../Downloads/noise-light.png"; sourceTree = "<group>"; };
 		F8C75F5E2B34C230009FD101 /* ImageTokuly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageTokuly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8C75F612B34C230009FD101 /* ImageTokulyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTokulyApp.swift; sourceTree = "<group>"; };
 		F8C75F632B34C230009FD101 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -100,6 +104,7 @@
 		F8C75F602B34C230009FD101 /* ImageTokuly */ = {
 			isa = PBXGroup;
 			children = (
+				F8B2E9FA2B45DD3E000DB9DA /* noise-light.png */,
 				F8C75F612B34C230009FD101 /* ImageTokulyApp.swift */,
 				F8C75F632B34C230009FD101 /* ContentView.swift */,
 				F8B1E1E62B374BD100996B69 /* LoginWebView.swift */,
@@ -130,6 +135,7 @@
 		F8C75F7B2B34C233009FD101 /* ImageTokulyUITests */ = {
 			isa = PBXGroup;
 			children = (
+				F8B2E9F82B45DD0B000DB9DA /* noise-light.png */,
 				F8C75F7C2B34C233009FD101 /* ImageTokulyUITests.swift */,
 				F8C75F7E2B34C233009FD101 /* ImageTokulyUITestsLaunchTests.swift */,
 			);
@@ -241,7 +247,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8C75F692B34C232009FD101 /* Preview Assets.xcassets in Resources */,
+				F8B2E9FB2B45DD3E000DB9DA /* noise-light.png in Resources */,
 				F8C75F662B34C232009FD101 /* Assets.xcassets in Resources */,
+				F8B2E9F92B45DD0B000DB9DA /* noise-light.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

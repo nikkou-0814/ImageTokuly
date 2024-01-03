@@ -64,15 +64,15 @@ struct ContentView: View {
                     }
                     .padding(.horizontal, 15) // 左右
                     .padding(.vertical, 10) // 上下
-                    .background(Color(colorScheme == .dark ? .white.opacity(0.1) : .white))
+                    .background(Color(UIColor(red: 192/255, green: 118/255, blue: 75/255, alpha: 1)))
                     .cornerRadius(15)
-                    .foregroundColor(.primary)
-                    .shadow(color: Color(colorScheme == .dark ? .white : .black.opacity(0.3)), radius: 10, x: 0, y: 5)
+                    .foregroundColor(.white)
+                    .shadow(color: Color(UIColor(red: 175/255, green: 107/255, blue: 47/255, alpha: 1)), radius: 10, x: 0, y: 5)
                     .font(.system(size: 25).bold())
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
                     .edgesIgnoringSafeArea(.all)
                 
-                Button("アップロードした画像") {
+                Button("アップロードした写真") {
                     UploadedImageModal.toggle()
                     vibration()
                 }
