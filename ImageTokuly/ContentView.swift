@@ -72,7 +72,7 @@ struct ContentView: View {
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
                     .edgesIgnoringSafeArea(.all)
                 
-                Button("アップロードした写真") {
+                Button("アップロードした画像") {
                     UploadedImageModal.toggle()
                     vibration()
                 }
