@@ -1,0 +1,605 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F8B1E1E72B374BD100996B69 /* LoginWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B1E1E62B374BD100996B69 /* LoginWebView.swift */; };
+		F8B2E9F72B433A67000DB9DA /* UserPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B2E9F62B433A67000DB9DA /* UserPageView.swift */; };
+		F8C75F622B34C230009FD101 /* ImageTokulyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C75F612B34C230009FD101 /* ImageTokulyApp.swift */; };
+		F8C75F642B34C230009FD101 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C75F632B34C230009FD101 /* ContentView.swift */; };
+		F8C75F662B34C232009FD101 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8C75F652B34C232009FD101 /* Assets.xcassets */; };
+		F8C75F692B34C232009FD101 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8C75F682B34C232009FD101 /* Preview Assets.xcassets */; };
+		F8C75F732B34C233009FD101 /* ImageTokulyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C75F722B34C233009FD101 /* ImageTokulyTests.swift */; };
+		F8C75F7D2B34C233009FD101 /* ImageTokulyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C75F7C2B34C233009FD101 /* ImageTokulyUITests.swift */; };
+		F8C75F7F2B34C233009FD101 /* ImageTokulyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C75F7E2B34C233009FD101 /* ImageTokulyUITestsLaunchTests.swift */; };
+		F8C75F8C2B34D1D5009FD101 /* WebViewWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C75F8B2B34D1D5009FD101 /* WebViewWrapper.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F8C75F6F2B34C233009FD101 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F8C75F562B34C230009FD101 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8C75F5D2B34C230009FD101;
+			remoteInfo = ImageTokuly;
+		};
+		F8C75F792B34C233009FD101 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F8C75F562B34C230009FD101 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8C75F5D2B34C230009FD101;
+			remoteInfo = ImageTokuly;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F8B1E1E62B374BD100996B69 /* LoginWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWebView.swift; sourceTree = "<group>"; };
+		F8B2E9F62B433A67000DB9DA /* UserPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPageView.swift; sourceTree = "<group>"; };
+		F8C75F5E2B34C230009FD101 /* ImageTokuly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageTokuly.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8C75F612B34C230009FD101 /* ImageTokulyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTokulyApp.swift; sourceTree = "<group>"; };
+		F8C75F632B34C230009FD101 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F8C75F652B34C232009FD101 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F8C75F682B34C232009FD101 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F8C75F6E2B34C233009FD101 /* ImageTokulyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageTokulyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8C75F722B34C233009FD101 /* ImageTokulyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTokulyTests.swift; sourceTree = "<group>"; };
+		F8C75F782B34C233009FD101 /* ImageTokulyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageTokulyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8C75F7C2B34C233009FD101 /* ImageTokulyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTokulyUITests.swift; sourceTree = "<group>"; };
+		F8C75F7E2B34C233009FD101 /* ImageTokulyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTokulyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F8C75F8B2B34D1D5009FD101 /* WebViewWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewWrapper.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F8C75F5B2B34C230009FD101 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8C75F6B2B34C233009FD101 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8C75F752B34C233009FD101 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F8C75F552B34C230009FD101 = {
+			isa = PBXGroup;
+			children = (
+				F8C75F602B34C230009FD101 /* ImageTokuly */,
+				F8C75F712B34C233009FD101 /* ImageTokulyTests */,
+				F8C75F7B2B34C233009FD101 /* ImageTokulyUITests */,
+				F8C75F5F2B34C230009FD101 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F8C75F5F2B34C230009FD101 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F8C75F5E2B34C230009FD101 /* ImageTokuly.app */,
+				F8C75F6E2B34C233009FD101 /* ImageTokulyTests.xctest */,
+				F8C75F782B34C233009FD101 /* ImageTokulyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F8C75F602B34C230009FD101 /* ImageTokuly */ = {
+			isa = PBXGroup;
+			children = (
+				F8C75F612B34C230009FD101 /* ImageTokulyApp.swift */,
+				F8C75F632B34C230009FD101 /* ContentView.swift */,
+				F8B1E1E62B374BD100996B69 /* LoginWebView.swift */,
+				F8C75F8B2B34D1D5009FD101 /* WebViewWrapper.swift */,
+				F8B2E9F62B433A67000DB9DA /* UserPageView.swift */,
+				F8C75F652B34C232009FD101 /* Assets.xcassets */,
+				F8C75F672B34C232009FD101 /* Preview Content */,
+			);
+			path = ImageTokuly;
+			sourceTree = "<group>";
+		};
+		F8C75F672B34C232009FD101 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F8C75F682B34C232009FD101 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F8C75F712B34C233009FD101 /* ImageTokulyTests */ = {
+			isa = PBXGroup;
+			children = (
+				F8C75F722B34C233009FD101 /* ImageTokulyTests.swift */,
+			);
+			path = ImageTokulyTests;
+			sourceTree = "<group>";
+		};
+		F8C75F7B2B34C233009FD101 /* ImageTokulyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F8C75F7C2B34C233009FD101 /* ImageTokulyUITests.swift */,
+				F8C75F7E2B34C233009FD101 /* ImageTokulyUITestsLaunchTests.swift */,
+			);
+			path = ImageTokulyUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F8C75F5D2B34C230009FD101 /* ImageTokuly */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8C75F822B34C233009FD101 /* Build configuration list for PBXNativeTarget "ImageTokuly" */;
+			buildPhases = (
+				F8C75F5A2B34C230009FD101 /* Sources */,
+				F8C75F5B2B34C230009FD101 /* Frameworks */,
+				F8C75F5C2B34C230009FD101 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ImageTokuly;
+			productName = ImageTokuly;
+			productReference = F8C75F5E2B34C230009FD101 /* ImageTokuly.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F8C75F6D2B34C233009FD101 /* ImageTokulyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8C75F852B34C233009FD101 /* Build configuration list for PBXNativeTarget "ImageTokulyTests" */;
+			buildPhases = (
+				F8C75F6A2B34C233009FD101 /* Sources */,
+				F8C75F6B2B34C233009FD101 /* Frameworks */,
+				F8C75F6C2B34C233009FD101 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F8C75F702B34C233009FD101 /* PBXTargetDependency */,
+			);
+			name = ImageTokulyTests;
+			productName = ImageTokulyTests;
+			productReference = F8C75F6E2B34C233009FD101 /* ImageTokulyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F8C75F772B34C233009FD101 /* ImageTokulyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8C75F882B34C233009FD101 /* Build configuration list for PBXNativeTarget "ImageTokulyUITests" */;
+			buildPhases = (
+				F8C75F742B34C233009FD101 /* Sources */,
+				F8C75F752B34C233009FD101 /* Frameworks */,
+				F8C75F762B34C233009FD101 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F8C75F7A2B34C233009FD101 /* PBXTargetDependency */,
+			);
+			name = ImageTokulyUITests;
+			productName = ImageTokulyUITests;
+			productReference = F8C75F782B34C233009FD101 /* ImageTokulyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F8C75F562B34C230009FD101 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1510;
+				LastUpgradeCheck = 1510;
+				TargetAttributes = {
+					F8C75F5D2B34C230009FD101 = {
+						CreatedOnToolsVersion = 15.1;
+					};
+					F8C75F6D2B34C233009FD101 = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = F8C75F5D2B34C230009FD101;
+					};
+					F8C75F772B34C233009FD101 = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = F8C75F5D2B34C230009FD101;
+					};
+				};
+			};
+			buildConfigurationList = F8C75F592B34C230009FD101 /* Build configuration list for PBXProject "ImageTokuly" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F8C75F552B34C230009FD101;
+			productRefGroup = F8C75F5F2B34C230009FD101 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F8C75F5D2B34C230009FD101 /* ImageTokuly */,
+				F8C75F6D2B34C233009FD101 /* ImageTokulyTests */,
+				F8C75F772B34C233009FD101 /* ImageTokulyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F8C75F5C2B34C230009FD101 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8C75F692B34C232009FD101 /* Preview Assets.xcassets in Resources */,
+				F8C75F662B34C232009FD101 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8C75F6C2B34C233009FD101 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8C75F762B34C233009FD101 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F8C75F5A2B34C230009FD101 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8C75F642B34C230009FD101 /* ContentView.swift in Sources */,
+				F8C75F622B34C230009FD101 /* ImageTokulyApp.swift in Sources */,
+				F8B2E9F72B433A67000DB9DA /* UserPageView.swift in Sources */,
+				F8C75F8C2B34D1D5009FD101 /* WebViewWrapper.swift in Sources */,
+				F8B1E1E72B374BD100996B69 /* LoginWebView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8C75F6A2B34C233009FD101 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8C75F732B34C233009FD101 /* ImageTokulyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8C75F742B34C233009FD101 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8C75F7F2B34C233009FD101 /* ImageTokulyUITestsLaunchTests.swift in Sources */,
+				F8C75F7D2B34C233009FD101 /* ImageTokulyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F8C75F702B34C233009FD101 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F8C75F5D2B34C230009FD101 /* ImageTokuly */;
+			targetProxy = F8C75F6F2B34C233009FD101 /* PBXContainerItemProxy */;
+		};
+		F8C75F7A2B34C233009FD101 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F8C75F5D2B34C230009FD101 /* ImageTokuly */;
+			targetProxy = F8C75F792B34C233009FD101 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F8C75F802B34C233009FD101 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F8C75F812B34C233009FD101 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F8C75F832B34C233009FD101 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ImageTokuly/Preview Content\"";
+				DEVELOPMENT_TEAM = 37MJA5A7HJ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tokuly.ImageTokuly;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F8C75F842B34C233009FD101 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ImageTokuly/Preview Content\"";
+				DEVELOPMENT_TEAM = 37MJA5A7HJ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tokuly.ImageTokuly;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F8C75F862B34C233009FD101 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 37MJA5A7HJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tokuly.ImageTokulyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ImageTokuly.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ImageTokuly";
+			};
+			name = Debug;
+		};
+		F8C75F872B34C233009FD101 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 37MJA5A7HJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tokuly.ImageTokulyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ImageTokuly.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ImageTokuly";
+			};
+			name = Release;
+		};
+		F8C75F892B34C233009FD101 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 37MJA5A7HJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tokuly.ImageTokulyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ImageTokuly;
+			};
+			name = Debug;
+		};
+		F8C75F8A2B34C233009FD101 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 37MJA5A7HJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tokuly.ImageTokulyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ImageTokuly;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F8C75F592B34C230009FD101 /* Build configuration list for PBXProject "ImageTokuly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8C75F802B34C233009FD101 /* Debug */,
+				F8C75F812B34C233009FD101 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8C75F822B34C233009FD101 /* Build configuration list for PBXNativeTarget "ImageTokuly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8C75F832B34C233009FD101 /* Debug */,
+				F8C75F842B34C233009FD101 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8C75F852B34C233009FD101 /* Build configuration list for PBXNativeTarget "ImageTokulyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8C75F862B34C233009FD101 /* Debug */,
+				F8C75F872B34C233009FD101 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8C75F882B34C233009FD101 /* Build configuration list for PBXNativeTarget "ImageTokulyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8C75F892B34C233009FD101 /* Debug */,
+				F8C75F8A2B34C233009FD101 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F8C75F562B34C230009FD101 /* Project object */;
+}
