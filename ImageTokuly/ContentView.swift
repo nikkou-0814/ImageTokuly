@@ -64,7 +64,7 @@ struct ContentView: View {
                     }
                     .padding(.horizontal, 15) // 左右
                     .padding(.vertical, 10) // 上下
-                    .background(Color(UIColor(red: 192/255, green: 118/255, blue: 75/255, alpha: 1)))
+                    .background(Color(UIColor(red: 250/255, green: 143/255, blue: 72/255, alpha: 1)))
                     .cornerRadius(15)
                     .foregroundColor(.white)
                     .shadow(color: Color(UIColor(red: 175/255, green: 107/255, blue: 47/255, alpha: 1)), radius: 10, x: 0, y: 5)
