@@ -15,6 +15,7 @@ body{
     justify-content: center;
     transition: all 0.5s cubic-bezier(0.22, 1, 0.36, 1);
     z-index: 9999;
+    border: 0px solid rgb(255, 255, 255, 0.2);
 }
 
 .header h1{
@@ -96,12 +97,6 @@ body{
     transition: all 0.5s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-.fade-in.show {
-    opacity: 1;
-    transform: scale(1);
-    filter: none;
-}
-
 .img{
     border-radius: 20px;
     aspect-ratio: 9/19.5;
@@ -153,4 +148,72 @@ body{
     color: white;
     bottom: 0;
     left: 10px;
+}
+
+.footers{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer{
+    position: relative;
+    background-color: rgb(230, 123, 52);
+    background-image: url(images/noise.png);
+    width: 100%;
+    opacity: 0;
+    transform: scale(0.8);
+    filter: blur(10px);
+    transition: all 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+    border-radius: 15px;
+    border: 3px solid rgb(255, 255, 255, 0.2);
+}
+
+.footer-text{
+    color: white;
+    font-size: 15px;
+    padding: 5px;
+}
+
+.footer.show {
+    opacity: 1;
+    transform: scale(1);
+    filter: blur(0);
+}
+
+.tokuly{
+    display: flex;
+    align-items: center;
+    background-color: royalblue;
+    border-radius: 15px;
+    height: 40px;
+    transition: all 0.4s;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    transition: all 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+    border: 2px solid rgb(255, 255, 255, 0.2);
+}
+
+.tokuly p{
+    transition: all 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+    color: white;
+    font-size: 17px;
+    padding: 10px;
+    font-weight: 700;
+}
+
+.tokuly:hover{
+    background-image: url(images/noise.png);
+    box-shadow: 0 0 15px royalblue;
+}
+
+.tokuly:active{
+    background-color: rgb(55, 135, 255);
+    box-shadow: 0 0 15px rgb(55, 135, 255);
+}
+
+.footer-text{
+    color: white;
+    font-size: 15px;
 }

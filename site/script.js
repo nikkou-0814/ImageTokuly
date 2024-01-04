@@ -80,11 +80,11 @@ window.addEventListener('scroll', function() {
 });
 
 window.addEventListener('scroll', function() {
-    const elements = document.querySelectorAll('.fade-in');
+    const elements = document.querySelectorAll('.footer');
     const windowHeight = window.innerHeight;
 
     elements.forEach(function(element) {
-        const elementTop = element.getBoundingClientRect().top;
+        const elementTop = element.getBoundingClientRect().bottom;
 
         if (elementTop < windowHeight) {
             element.classList.add('show');
