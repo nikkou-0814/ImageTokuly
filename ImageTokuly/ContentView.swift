@@ -197,10 +197,11 @@ func loadUserInfo(completion: @escaping (UserInfo?) -> Void) {
     }.resume()
 }
 
-
 struct UpLoadingImage: View {
     @Binding var selectedImage: UIImage?
     @Binding var isModalDisplayed: Bool
+    @State private var ShowImageURL = false
+    @State private var imageURL: String = ""
 
     var body: some View {
         NavigationView {
@@ -220,17 +221,30 @@ struct UpLoadingImage: View {
                 },
                 trailing: Button(action: {
                     vibration2()
+                    uploadImageAlert()
                 }) {
                     Text("アップロード")
                 }
             )
+            .alert(isPresented: $ShowImageURL) {
+                Alert(title: Text("アップロード完了"), message: Text(imageURL), dismissButton: .default(Text("クリップボードにコピー")) {
+                    UIPasteboard.general.string = self.imageURL
+                    isModalDisplayed = false
+                })
+            }
         }
         .onDisappear {
             selectedImage = nil
         }
     }
-}
 
+    func uploadImageAlert() {
+        // 画像のアップロード処理をここに書く
+        // アップロードが完了したら、以下のようにshowingAlertとimageURLを設定する
+        self.ShowImageURL = true
+        self.imageURL = "https://i.tokuly.com/"
+    }
+}
 
 struct PictureModalView: View {
     @Environment(\.colorScheme) var colorScheme
