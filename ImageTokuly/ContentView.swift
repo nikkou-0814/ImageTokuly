@@ -9,7 +9,7 @@ struct ImagePicker: UIViewControllerRepresentable {
     func makeUIViewController(context: UIViewControllerRepresentableContext<ImagePicker>) -> UIImagePickerController {
         let picker = UIImagePickerController()
         picker.delegate = context.coordinator
-        picker.modalPresentationStyle = .fullScreen // 追加
+        picker.modalPresentationStyle = .fullScreen
         return picker
     }
 
@@ -62,8 +62,8 @@ struct ContentView: View {
                         vibration()
                         isImagePickerDisplayed = true
                     }
-                    .padding(.horizontal, 15) // 左右
-                    .padding(.vertical, 10) // 上下
+                    .padding(.horizontal, 15)
+                    .padding(.vertical, 10)
                     .background(Color(UIColor(red: 250/255, green: 143/255, blue: 72/255, alpha: 1)))
                     .cornerRadius(15)
                     .foregroundColor(.white)
@@ -102,16 +102,16 @@ struct ContentView: View {
                             AsyncImage(url: url) { image in
                                 image
                                     .resizable()
-                                    .scaledToFill() // Change this line
+                                    .scaledToFill()
                                     .frame(width: 50, height: 50)
-                                    .clipShape(Circle()) // Move this line up
+                                    .clipShape(Circle())
                                     .padding(10)
                             } placeholder: {
                                 Image(systemName: "person.circle")
                                     .resizable()
-                                    .scaledToFill() // Change this line
+                                    .scaledToFill()
                                     .frame(width: 40, height: 40)
-                                    .clipShape(Circle()) // Move this line up
+                                    .clipShape(Circle())
                                     .padding(10)
                             }
                         } else {
@@ -239,8 +239,6 @@ struct UpLoadingImage: View {
     }
 
     func uploadImageAlert() {
-        // 画像のアップロード処理をここに書く
-        // アップロードが完了したら、以下のようにshowingAlertとimageURLを設定する
         self.ShowImageURL = true
         self.imageURL = "https://i.tokuly.com/"
     }

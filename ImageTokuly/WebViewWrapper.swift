@@ -27,7 +27,5 @@ struct WebViewWrapper: UIViewRepresentable {
         init(_ parent: WebViewWrapper) {
             self.parent = parent
         }
-        
-        // Add WKNavigationDelegate methods if needed
     }
 }

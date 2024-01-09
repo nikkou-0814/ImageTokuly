@@ -11,7 +11,6 @@ struct LoginWebViewWrapper: UIViewControllerRepresentable {
     }
 
     func updateUIViewController(_ uiViewController: LoginWebView, context: Context) {
-        // Add necessary update logic here
     }
 }
 
@@ -55,7 +54,6 @@ class LoginWebView: UIViewController, WKNavigationDelegate {
 
             decisionHandler(.cancel)
             
-            // Navigate to ContentView
             let contentView = ContentView()
             if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
                let window = windowScene.windows.first {

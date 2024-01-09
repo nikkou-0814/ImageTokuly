@@ -32,16 +32,16 @@ struct UserPageView: View {
                         AsyncImage(url: imageUrl) { image in
                             image
                                 .resizable()
-                                .scaledToFill() // Change this line
+                                .scaledToFill()
                                 .frame(width: 70, height: 70)
-                                .clipShape(Circle()) // Move this line up
+                                .clipShape(Circle())
                                 .padding(10)
                         } placeholder: {
                             Image(systemName: "person.circle")
                                 .resizable()
-                                .scaledToFill() // Change this line
+                                .scaledToFill()
                                 .frame(width: 70, height: 70)
-                                .clipShape(Circle()) // Move this line up
+                                .clipShape(Circle())
                                 .padding(10)
                         }
                     } else {
@@ -74,7 +74,7 @@ struct UserPageView: View {
                     Text("ダッシュボードを開く")
                         .frame(maxWidth: .infinity)
                         .frame(width: UIScreen.main.bounds.width - 40)
-                        .padding(.vertical, 15) // 上下
+                        .padding(.vertical, 15)
                         .background(Color(colorScheme == .dark ? .white.opacity(0.1) : .white))
                         .cornerRadius(15)
                         .foregroundColor(.primary)
@@ -89,7 +89,7 @@ struct UserPageView: View {
                     Text("ログアウト")
                         .frame(maxWidth: .infinity)
                         .frame(width: UIScreen.main.bounds.width - 40)
-                        .padding(.vertical, 15) // 上下
+                        .padding(.vertical, 15)
                         .background(Color(.red))
                         .cornerRadius(15)
                         .foregroundColor(.white)
@@ -101,14 +101,14 @@ struct UserPageView: View {
                     case .logoutConfirmation:
                         return Alert(title: Text("ログアウト"), message: Text("ログアウトしてもよろしいですか？"), primaryButton: .destructive(Text("ログアウト")) {
                             UserLogout()
-                            UserDefaults.standard.removeObject(forKey: "Token") // トークンを削除
-                            print("Token was removed.") // Add this line
-                            self.alertType = .logoutCompletion // Add this line
-                        }, secondaryButton: .cancel(Text("キャンセル"))) // Change this line
+                            UserDefaults.standard.removeObject(forKey: "Token")
+                            print("Token was removed.")
+                            self.alertType = .logoutCompletion
+                        }, secondaryButton: .cancel(Text("キャンセル")))
                     case .logoutCompletion:
                         return Alert(title: Text("ログアウト完了"), message: Text("ログアウトが完了しました。アプリを終了します。"), primaryButton: .destructive(Text("OK")) {
                             exit(0)
-                        }, secondaryButton: .cancel(Text("キャンセル"))) // Change this line
+                        }, secondaryButton: .cancel(Text("キャンセル")))
                     }
                 }
             } else if isLoading {
